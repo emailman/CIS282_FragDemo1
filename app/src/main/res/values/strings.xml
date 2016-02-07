@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Frag Demo 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_width">Width:</string>
+    <string name="label_calculate">Calculate</string>
+    <string name="label_height">Height:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

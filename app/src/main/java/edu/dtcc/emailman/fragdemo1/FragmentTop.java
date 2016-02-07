@@ -1,4 +1,4 @@
-package layout;
+package edu.dtcc.emailman.fragdemo1;
 
 
 import android.os.Bundle;

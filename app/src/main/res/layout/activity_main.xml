@@ -12,9 +12,19 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="layout.FragmentTop"
+        android:name="edu.dtcc.emailman.fragdemo1.FragmentTop"
         android:id="@+id/fragment"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         tools:layout="@layout/fragment_top" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="edu.dtcc.emailman.fragdemo1.FragmentBottom"
+        android:id="@+id/fragment2"
+        tools:layout="@layout/fragment_bottom"
+        android:layout_below="@+id/fragment"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

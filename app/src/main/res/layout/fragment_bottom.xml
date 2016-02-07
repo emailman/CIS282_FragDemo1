@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAreaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Area:"
+        android:textSize="30sp"
+        android:paddingLeft="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtPerimeterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Perimeter"
+        android:layout_below="@+id/txtAreaLabel"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="80dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtAreaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.0"
+        android:paddingRight="80dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtPerimeterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.0"
+        android:paddingRight="80dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/txtAreaValue"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp" />
+</RelativeLayout>

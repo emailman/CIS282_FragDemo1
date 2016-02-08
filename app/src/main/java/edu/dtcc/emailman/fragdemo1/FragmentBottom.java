@@ -8,8 +8,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /*
- * Created by emailman on 2/7/16.
+ * Created by emailman on 2/7/16
  * for CIS 282
+ *
+ * Bottom fragment receives two values, calculates results,
+ * and writes results into two text fields
+ *
  */
 
 public class FragmentBottom extends Fragment {
@@ -36,7 +40,11 @@ public class FragmentBottom extends Fragment {
         return view;
     }
 
-    public void setClickedText(String area, String perimeter) {
+    public void setClickedText(String height, String width) {
+        // Calculate the area and perimeter (TBD)
+        String area = height;
+        String perimeter = width;
+
         // Put the passed parameters in the output fields
         txtArea.setText(area);
         txtPerimeter.setText(perimeter);

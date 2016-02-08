@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity
     // This is the interface we are forced to implement
     public void createClick(String height, String width) {
 
-        // Create a reference to the bottom fragment
+        // Get a reference to the bottom fragment
         FragmentBottom fragmentBottom =
                 (FragmentBottom) getSupportFragmentManager().findFragmentById(R.id.fragment2);
 

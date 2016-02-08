@@ -32,9 +32,12 @@ public class FragmentTop extends Fragment {
     // Declare an interface object
     TopFragListener activityComnmander;
 
+    // Handler called when fragment is attached to the activity
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+
+        // Initialize the interface object
         try {
             activityComnmander = (TopFragListener) activity;
         }

@@ -56,6 +56,10 @@ public class FragmentTop extends Fragment {
         etHeight = (EditText) view.findViewById(R.id.etHeight);
         etWidth = (EditText) view.findViewById(R.id.etWidth);
 
+        // Set the two edit text fields to 0
+        etHeight.setText("0");
+        etWidth.setText("0");
+
         // Get a reference to the button
         final Button btnCalculate = (Button) view.findViewById(R.id.btnCalc);
 
@@ -74,7 +78,16 @@ public class FragmentTop extends Fragment {
 
     // Method to handle the button click
     public void buttonClicked(View view) {
-        activityCommander.createClick(etHeight.getText().toString(),
-                etWidth.getText().toString());
+
+        String height = etHeight.getText().toString();
+        String width = etWidth.getText().toString();
+
+        // Do not pass empty strings to createClick
+        if (height.isEmpty() || width.isEmpty()) {
+            height = "0";
+            width = "0";
+        }
+
+        activityCommander.createClick(height, width);
     }
 }

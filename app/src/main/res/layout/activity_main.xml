@@ -13,6 +13,7 @@
         android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:name="edu.dtcc.emailman.fragdemo1.FragmentTop"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         tools:layout="@layout/fragment_top" />

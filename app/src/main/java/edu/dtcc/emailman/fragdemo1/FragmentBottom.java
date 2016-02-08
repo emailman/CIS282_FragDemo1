@@ -41,12 +41,16 @@ public class FragmentBottom extends Fragment {
     }
 
     public void setClickedText(String height, String width) {
-        // Calculate the area and perimeter (TBD)
-        String area = height;
-        String perimeter = width;
 
-        // Put the passed parameters in the output fields
-        txtArea.setText(area);
-        txtPerimeter.setText(perimeter);
+        // Calculate the area and perimeter
+        double h = Double.parseDouble(height);
+        double w = Double.parseDouble(width);
+
+        double area = h * w;
+        double perimeter = 2 * (h + w);
+
+        // Put the calculated values in the output fields
+        txtArea.setText(Double.toString(area));
+        txtPerimeter.setText(Double.toString(perimeter));
     }
 }

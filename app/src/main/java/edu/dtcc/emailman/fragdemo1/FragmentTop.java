@@ -1,8 +1,7 @@
 package edu.dtcc.emailman.fragdemo1;
 
-// import android.app.Activity;
-import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,15 +33,15 @@ public class FragmentTop extends Fragment {
 
     // Handler called when fragment is attached to the activity
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
+    public void onAttach(Context context) {
+        super.onAttach(context);
 
         // Initialize the interface object
         try {
-            activityComnmander = (TopFragListener) activity;
+            activityComnmander = (TopFragListener) context;
         }
         catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString());
+            throw new ClassCastException(context.toString());
         }
     }
 

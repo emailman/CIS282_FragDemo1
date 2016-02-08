@@ -1,7 +1,9 @@
 package edu.dtcc.emailman.fragdemo1;
 
+// import android.app.Activity;
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,16 +19,28 @@ public class FragmentTop extends Fragment {
     // Declare the edit text fields
     private static EditText etHeight;
     private static EditText etWidth;
-    
-    TopFragListener activityComnmander;
+
+    public FragmentTop() {
+        // Required empty public constructor
+    }
 
     // Define an interface
     public interface TopFragListener {
         void createClick(String height, String width);
     }
 
-    public FragmentTop() {
-        // Required empty public constructor
+    // Declare an interface object
+    TopFragListener activityComnmander;
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            activityComnmander = (TopFragListener) activity;
+        }
+        catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString());
+        }
     }
 
     @Override

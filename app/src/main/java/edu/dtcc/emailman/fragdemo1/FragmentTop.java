@@ -29,7 +29,7 @@ public class FragmentTop extends Fragment {
     }
 
     // Declare an interface object
-    TopFragListener activityComnmander;
+    TopFragListener activityCommander;
 
     // Handler called when fragment is attached to the activity
     @Override
@@ -38,7 +38,7 @@ public class FragmentTop extends Fragment {
 
         // Initialize the interface object
         try {
-            activityComnmander = (TopFragListener) context;
+            activityCommander = (TopFragListener) context;
         }
         catch (ClassCastException e) {
             throw new ClassCastException(context.toString());
@@ -74,7 +74,7 @@ public class FragmentTop extends Fragment {
 
     // Method to handle the button click
     public void buttonClicked(View view) {
-        activityComnmander.createClick(etHeight.getText().toString(),
+        activityCommander.createClick(etHeight.getText().toString(),
                 etWidth.getText().toString());
     }
 }
